@@ -13,3 +13,6 @@ const convertCsvToJson = (csvFile) => {
     return JSON.stringify(jsonFile, null, 2);
   };
   
+  const splitCsvRows = (csvFile) => {
+    return csvFile.split('\r\n');
+  };
