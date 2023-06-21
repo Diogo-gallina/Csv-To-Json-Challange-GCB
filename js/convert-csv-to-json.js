@@ -16,3 +16,7 @@ const convertCsvToJson = (csvFile) => {
   const splitCsvRows = (csvFile) => {
     return csvFile.split('\r\n');
   };
+
+  const extractColumnNames = (csvRow) => {
+    return csvRow.split(',');
+  };
