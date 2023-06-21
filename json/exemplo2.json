@@ -1,0 +1,20 @@
+[
+  {
+    "ID": "1",
+    "Nome": "Caneta Azul",
+    "Preço": "2.5",
+    "Quantidade": "100"
+  },
+  {
+    "ID": "2",
+    "Nome": "Caderno Grande",
+    "Preço": "10.0",
+    "Quantidade": "50"
+  },
+  {
+    "ID": "3",
+    "Nome": "Lápis HB",
+    "Preço": "1.0",
+    "Quantidade": "200"
+  }
+]
