@@ -13,10 +13,21 @@ const convertCsvToJson = (csvFile) => {
     return JSON.stringify(jsonFile, null, 2);
   };
   
-  const splitCsvRows = (csvFile) => {
-    return csvFile.split('\r\n');
-  };
+const splitCsvRows = (csvFile) => {
+return csvFile.split('\r\n');
+};
 
-  const extractColumnNames = (csvRow) => {
-    return csvRow.split(',');
-  };
+const extractColumnNames = (csvRow) => {
+return csvRow.split(',');
+};
+
+const createJsonObject = (columnNames, rowData) => {
+const objJson = {};
+
+for (let currentData = 0; currentData < rowData.length; currentData++) {
+    objJson[columnNames[currentData]] = rowData[currentData];
+}
+
+return objJson;
+};
+  
