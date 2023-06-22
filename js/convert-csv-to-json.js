@@ -76,3 +76,9 @@ const writeJsonFile = (jsonFilePath, jsonData, jsonFileName) => {
     console.log(`Json file ${jsonFileName} successfully saved!`);
   });
 }
+
+const handleError = (message, error) => {
+  console.log(message, error);
+}
+
+processFiles();
