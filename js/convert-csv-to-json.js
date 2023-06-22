@@ -15,7 +15,6 @@ const processFiles = () => {
   });
 }
 
-
 const processFile = (file) => {
   const csvFilePath = path.join(csvFolder, file);
   const jsonFileName = file.replace('.csv', '.json');
@@ -48,13 +47,11 @@ const convertCsvToJson = (csvFile) => {
   return JSON.stringify(jsonFile, null, 2);
 }
 
-const splitCsvRows = (csvFile) => {
-  return csvFile.split('\r\n');
-}
+const splitCsvRows = (csvFile) => csvFile.split('\r\n');
 
-const extractColumnNames = (csvRow) => {
-  return csvRow.split(',');
-}
+
+const extractColumnNames = (csvRow) => csvRow.split(',');
+
 
 const createJsonObject = (columnNames, rowData) => {
   const objJson = {};
@@ -77,8 +74,6 @@ const writeJsonFile = (jsonFilePath, jsonData, jsonFileName) => {
   });
 }
 
-const handleError = (message, error) => {
-  console.log(message, error);
-}
+const handleError = (message, error) => console.log(message, error);
 
 processFiles();
