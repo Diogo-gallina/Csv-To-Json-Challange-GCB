@@ -15,6 +15,24 @@ const processFiles = () => {
   });
 }
 
+
+const processFile = (file) => {
+  const csvFilePath = path.join(csvFolder, file);
+  const jsonFileName = file.replace('.csv', '.json');
+  const jsonFilePath = path.join(jsonFolder, jsonFileName);
+
+  fs.readFile(csvFilePath, 'utf8', (err, data) => {
+    if (err) {
+      handleError(`Error reading CSV file ${file}:`, err);
+      return;
+    }
+
+    const jsonData = convertCsvToJson(data);
+
+    writeJsonFile(jsonFilePath, jsonData, jsonFileName);
+  });
+}
+
 const convertCsvToJson = (csvFile) => {
   const rows = splitCsvRows(csvFile);
   const columnName = extractColumnNames(rows[0]);
