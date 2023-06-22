@@ -66,3 +66,13 @@ const createJsonObject = (columnNames, rowData) => {
   return objJson;
 }
 
+const writeJsonFile = (jsonFilePath, jsonData, jsonFileName) => {
+  fs.writeFile(jsonFilePath, jsonData, 'utf8', (err) => {
+    if (err) {
+      handleError(`Error reading Json file ${jsonFileName}:`, err);
+      return;
+    }
+
+    console.log(`Json file ${jsonFileName} successfully saved!`);
+  });
+}
