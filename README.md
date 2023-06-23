@@ -1,4 +1,4 @@
-#🖲 CSV to JSON Converter
+# 🖲 CSV to JSON Converter
 
 This TypeScript code snippet provides a CSV to JSON conversion functionality. It reads CSV files from a specified folder, processes each file, and generates corresponding JSON files. The code utilizes the Node.js `fs` and `path` modules for file operations.
 
@@ -30,7 +30,7 @@ The code includes the following functions to handle the CSV to JSON conversion p
 8- handleError(message: string, error: NodeJS.ErrnoException): void
 ```
 
-####Explanation
+#### Explanation
 
 1-  This function reads the CSV files from the specified folder and processes each file by calling the processFile() function.
 
@@ -49,7 +49,7 @@ The code includes the following functions to handle the CSV to JSON conversion p
 8- This function handles and logs any errors that occur during the file processing.
 
 
-##🤝 Contributors
+## 🤝 Contributors
 We want to thank the following people who contributed to this project:
 
 Diogo-gallina: https://github.com/Diogo-gallina
