@@ -1,0 +1,20 @@
+[
+  {
+    "Data": "2023-06-15",
+    "Produto": "Caneta Azul",
+    "Quantidade": "5",
+    "Vendedor": "João Silva"
+  },
+  {
+    "Data": "2023-06-16",
+    "Produto": "Caderno Grande",
+    "Quantidade": "2",
+    "Vendedor": "Maria Souza"
+  },
+  {
+    "Data": "2023-06-17",
+    "Produto": "Lápis HB",
+    "Quantidade": "10",
+    "Vendedor": "Carlos Santos"
+  }
+]
